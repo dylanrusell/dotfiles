@@ -102,5 +102,9 @@ nnoremap <silent> <leader>n :let [&nu, &rnu] = [&nu+&rnu==0, &nu]<cr>
 "toggles Mouse Mode
 nnoremap <silent> <leader>m :exec &mouse!=""? "set mouse=" : "set mouse=nv"<CR>
 
+" Toggles Syntastic Check and runs it
+" the :w or saving portion is for it to run otherwise it's old data
+nnoremap <leader>e :SyntasticToggleMode<cr>:w<cr>
+
 "hex editor command
 nnoremap <C-H> :%!xxd<CR>
