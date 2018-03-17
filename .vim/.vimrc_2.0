@@ -61,6 +61,12 @@ set backspace=indent,eol,start
 set scrolloff=10                  " keep 10 lines around the cursor
 set fileformats=unix,dos,mac      " support all kinds of lind-endings
 
+" Disables visual and audio bells 
+" you need visual bell to get rid of the audio bell as well
+set noerrorbells
+set t_vb = visualbell
+set t_vb =
+
 set textwidth=128 wrapmargin=0
 
 set winwidth=84                   " sets the minimum width and height of a
