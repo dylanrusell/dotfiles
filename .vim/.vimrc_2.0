@@ -61,6 +61,8 @@ set backspace=indent,eol,start
 set scrolloff=10                  " keep 10 lines around the cursor
 set fileformats=unix,dos,mac      " support all kinds of lind-endings
 
+set pastetoggle=<C-p>
+
 " Disables visual and audio bells 
 " you need visual bell to get rid of the audio bell as well
 set noerrorbells
